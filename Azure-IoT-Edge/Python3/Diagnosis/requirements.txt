@@ -1,4 +1,0 @@
-azure-iot-device
-cryptography
-azure-storage-blob
-requests
