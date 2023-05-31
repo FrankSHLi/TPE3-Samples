@@ -106,8 +106,11 @@ Sample:
 
 #### 3.4 Direct Method
 
-This module supports a direct method name `remove-log`, which removes all the locally kept log files except for the latest one regardless of the payload. Payload doesn't matter in this case.
-Direct method calls with other method name will trigger a log upload task once it's received by the module. Method name and payload doesn't matter in this case.
+This module supports a direct method name `remove-log`, which removes all the locally kept log files except for the latest one regardless of the payload. 
+
+Direct method calls with other method name will trigger a log upload task once it's received by the module. Method name and payload doesn't matter in this case, but payload must be json formatted.
+
+> Note: Please note that payload must be json formatted even if we are not referencing it. This is a limitation of Azure IoT Python SDK.
 
 ---
 
