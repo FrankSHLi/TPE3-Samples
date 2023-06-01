@@ -38,18 +38,12 @@ This document guide you how to deploy a diagnosis module on TPE devices and leve
   ```json
   {
     "HostConfig": {
-      "NetworkMode": "bridge",
       "ExtraHosts": [
         "<HOSTNAME>:172.31.0.1"
       ],
       "Binds": [
         "/home/moxa/log:/host/log"
       ]
-    },
-    "NetworkingConfig": {
-      "EndpointsConfig": {
-        "tpe_it_zone": {}
-      }
     }
   }
   ```
